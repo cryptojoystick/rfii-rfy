@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Requirements
 
-NPM [NodePackageManager] is required, in addition to NG [Angular].
+[NPM](https://npmjs.com). is required, in addition to [Angular](https://angular.io)..
 
 ## Installation steps
 
