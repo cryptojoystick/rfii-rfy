@@ -59,6 +59,9 @@ body {
 h1,h2,h3,h4,h5,h6,button {
     font-family: 'Glass';
     filter:drop-shadow(0px 0px 5px $white);
+    a {
+        font-family: 'Glass';
+    }
 }
 input, span, p, div, section, a {
     font-family :'Source Code Pro';
@@ -136,6 +139,9 @@ button {
  padding:0.25rem;
  overflow:hidden;
  cursor:pointer;
+ a {
+     color:$white;
+ }
  &:hover {
     color:$magenta;
     background:$ltblue;
@@ -143,6 +149,9 @@ button {
     i {
     transform:scale(3);
     opacity:0.3;
+    }
+    a {
+        color:$magenta;
     }
  }
 }
