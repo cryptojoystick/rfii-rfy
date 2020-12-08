@@ -9,4 +9,7 @@
     display:grid;
     justify-content: space-around;
     align-content: space-around;
+    @media (max-width:600px), (max-height:400px) {
+        align-content:start;
+    }
 }
