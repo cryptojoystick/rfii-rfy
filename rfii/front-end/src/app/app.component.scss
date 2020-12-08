@@ -1,0 +1,41 @@
+@import '../colors.scss';
+:host {
+    grid-area:appx;
+    display:grid;
+    grid-template-areas:
+    'header'
+    'content'
+    'footer';
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    min-height:100vh;
+    min-width:100vw;
+    max-width:100vw;
+    max-height:100vh;
+    app-header {
+        grid-area:header;
+    }
+    app-footer {
+        grid-area:footer;
+    }
+    app-footer, app-header {
+        z-index:42069;
+    }
+    app-arrows, app-circles {
+        z-index:3;
+    }
+    router-outlet {
+        grid-area:content;
+        z-index:1;
+    }
+
+    @keyframes draw {
+        from {
+          stroke-dashoffset: 1000;
+        }
+      
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+}

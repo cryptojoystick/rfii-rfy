@@ -1,0 +1,55 @@
+@import '../../colors.scss';
+:host {
+    grid-area:content;
+    z-index:99;
+    max-width:100%;
+    min-width:100%;
+    max-height:100%;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+    '. . .'
+    '. inner .'
+    '. . .';
+    justify-content: space-around;
+    align-content: space-around;
+    section.inner {
+        grid-area:inner;
+        max-width:100%;
+        min-width:100%;
+        max-height:100%;
+        min-height:100%;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+        justify-items:center;
+        align-items:center;
+        justify-content:space-evenly;
+        align-content:space-evenly;
+        h1 {
+            // text-shadow:0px 0px 3px $purple;
+            margin:0px;
+        }
+        h1, p {
+            text-align:left;
+            justify-self:start;
+            i {
+                color:$magenta;
+            }
+        }
+        div.buttons {
+            display:grid;
+            grid-template-columns: max-content max-content;
+            grid-template-rows: 1fr;
+            column-gap:1rem;
+            justify-self:start;
+            @media (max-width:900px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: max-content max-content;
+                row-gap:1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+:host {
+    grid-area:content;
+    z-index:2;
+    .arrow {
+        grid-area:content;
+    z-index: 1000;
+    opacity: 0.5;
+    position: absolute;
+
+    &--top {
+        top: 0;
+        left: -5em;
+    }
+
+    &--bottom {
+        bottom: 0;
+        right: 3em;
+    }
+    }
+    .draw-in {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: draw 15s ease-in-out alternate infinite;
+      }
+}

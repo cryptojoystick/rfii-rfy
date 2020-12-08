@@ -1,0 +1,50 @@
+@import '../../colors.scss';
+:host {
+    grid-area:content;
+    z-index:99;
+    max-width:100%;
+    min-width:100%;
+    max-height:100%;
+    min-height:100%;
+    display:grid;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 10px 1fr 10px;
+    grid-template-areas:
+    '. . .'
+    '. inner .'
+    '. . .';
+    justify-content: space-around;
+    align-content: space-around;
+    section.inner {
+        grid-area:inner;
+        max-width:100%;
+        min-width:100%;
+        max-height:100%;
+        min-height:100%;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content max-content max-content;
+        grid-template-areas:
+        'contenta'
+        'contentb'
+        'contentc'
+        'contentd';
+        // justify-items:center;
+        // align-items:center;
+        // justify-content:space-evenly;
+        // align-content:space-evenly;
+        app-landing {
+            grid-area:contenta!important;
+        }
+        app-roadmap {
+            grid-area:contentb!important;
+        }
+        app-info {
+            grid-area:contentc!important;
+        }
+        app-decentralization {
+            grid-area:contentd!important;
+        }
+        overflow-y:scroll;
+    }
+}
