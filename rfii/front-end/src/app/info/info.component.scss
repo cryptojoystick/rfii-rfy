@@ -44,5 +44,10 @@
             text-align:left;
             justify-self:start;
         }
+        p {
+            border-radius:5px;
+            background:rgba(0,0,0,0.15);
+            backdrop-filter: blur(5px);
+        }
     }
 }
