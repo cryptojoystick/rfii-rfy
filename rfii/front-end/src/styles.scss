@@ -157,6 +157,8 @@ button {
      text-overflow:ellipsis;
      overflow:hidden;
      color:$white;
+     pointer-events:all!important;
+     cursor:pointer;
  }
  &:hover {
     color:$magenta;
